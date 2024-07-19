@@ -19,15 +19,24 @@ body {
     margin: 0 auto;
 }
 
-/* Main */
+/*-------- Main --------*/
 
 main {
     background-color: lightcoral;
     height: calc(100vh - 120px);
     overflow: auto;
+
+    display: flex;
 }
 
-/* Footer */
+/*---- Sidebar ----*/
+
+.sidebar {
+    width: 60px;
+    background-color: darkcyan;
+}
+
+/*-------- Footer --------*/
 
 footer {
     height: 120px;
