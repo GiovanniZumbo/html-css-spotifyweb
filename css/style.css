@@ -18,3 +18,18 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* Main */
+
+main {
+    background-color: lightcoral;
+    height: calc(100vh - 120px);
+    overflow: auto;
+}
+
+/* Footer */
+
+footer {
+    height: 120px;
+    background-color: darkolivegreen;
+}
