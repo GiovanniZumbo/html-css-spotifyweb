@@ -10,6 +10,7 @@
 
 body {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    font-size: 12px;
 }
 
 img {
@@ -63,20 +64,25 @@ main {
 }
 
 .sidebar-top {
-    max-width: 40px;
+    max-width: 100%;
 }
 
 .sidebar-logo img {
-    max-width: 100%;
+    max-width: 40px;
 }
 
 .sidebar-home ul {
     margin: 0 33px;
 }
 
-.sidebar-home span {
-    display: inline;
+.sidebar-home li {
+    margin: 20px 0;
 }
+
+.hidden {
+    display: none;
+}
+
 
 /*---- main-content ----*/
 
@@ -144,17 +150,22 @@ footer>* {
     color: grey;
 }
 
+.footer-left>* {
+    margin: 0 10px;
+}
+
 .current-song {
     gap: 10px;
     align-items: center;
 }
+
 
 .current-song-opt {
     display: inline;
 }
 
 .album-cover img {
-    max-height: 100%;
+    max-height: 75px;
 }
 
 /* Footer middle */
