@@ -32,6 +32,12 @@ a {
     text-decoration: none;
 }
 
+/* Colors */
+
+.gray {
+    color: #4e4e4e;
+}
+
 /*-------- MAIN --------*/
 
 main {
@@ -51,6 +57,25 @@ main {
     position: fixed;
     top: 0;
     left: 0;
+
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.sidebar-top {
+    max-width: 40px;
+}
+
+.sidebar-logo img {
+    max-width: 100%;
+}
+
+.sidebar-home ul {
+    margin: 0 33px;
+}
+
+.sidebar-home span {
+    display: inline;
 }
 
 /*---- main-content ----*/
