@@ -23,13 +23,6 @@ img {
     flex-basis: 20%;
 }
 
-.col-30 {
-    flex-basis: calc(30% - 10px);
-}
-
-.col-33 {
-    flex-basis: calc(100% / 3 - 20px / 3);
-}
 
 .col-40 {
     flex-basis: calc(40% - 10px);
@@ -126,7 +119,15 @@ footer {
     background-color: #292929;
     padding: 20px 5px;
     font-size: 12px;
+}
 
+footer .col-33 {
+    flex-basis: calc(100% / 3 - 20px / 3);
+}
+
+footer button {
+    background-color: transparent;
+    border: none;
 }
 
 footer.row {
@@ -186,10 +187,6 @@ footer>* {
     justify-content: space-between;
 }
 
-.player-icons button {
-    background-color: transparent;
-    border: none;
-}
 
 .fa-circle-play {
     padding: 0 10px;
@@ -204,13 +201,34 @@ footer>* {
 }
 
 .progress-bar {
-    border: 2px solid grey;
+
+    background-color: grey;
     flex-basis: 80%;
     margin: 0 10px;
     border-radius: 25px;
 
+    /* Not the right solution, but it's a nice effect
+    border-left: 25px solid white; */
+}
+
+.advance {
+    border: 2px solid white;
+    width: 20%;
+    border-radius: 25px;
 }
 
 /* Footer right */
 
-.footer-right {}
+.footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-right button {
+    margin: 0 2%;
+}
+
+.footer-right * {
+    color: white;
+}

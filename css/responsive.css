@@ -1,9 +1,24 @@
 @media screen and (min-width: 576px) {
-
     .sidebar {
         flex-basis: 250px;
     }
 
 }
 
-@media screen and (min-width: 720px) {}
+@media screen and (min-width: 850px) {
+    footer .col-30 {
+        flex-basis: calc(30% - 10px);
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    footer .col-20 {
+        flex-basis: calc(20% - 10px);
+    }
+
+    footer .col-40 {
+        flex-basis: calc(40% - 10px);
+    }
+
+}
