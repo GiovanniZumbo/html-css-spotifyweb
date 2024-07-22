@@ -10,6 +10,7 @@
 
 body {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    font-weight: 500;
 }
 
 img {
@@ -22,7 +23,6 @@ img {
 .col-20 {
     flex-basis: 20%;
 }
-
 
 .col-40 {
     flex-basis: calc(40% - 10px);
@@ -37,6 +37,7 @@ a {
 }
 
 /* Colors */
+
 
 .gray {
     color: #4e4e4e;
@@ -55,13 +56,13 @@ main {
 /*---- Sidebar ----*/
 
 .sidebar {
-    flex-basis: 60px;
+    flex-basis: 40px;
     background-color: grey;
     flex-shrink: 0;
 
     padding: 10px 10px;
-    text-align: left;
 }
+
 
 .sidebar-top {
     max-width: 100%;
@@ -71,16 +72,21 @@ main {
     max-width: 40px;
 }
 
-.sidebar-home ul {
-    margin: 0 33px;
+
+.sidebar-home img {
+    width: 36px;
+    display: inline-block
 }
 
-.sidebar-home li {
-    margin: 20px 0;
+.home-section {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
 }
 
-.hidden {
-    display: none;
+.hidden a {
+    /* display: none; */
+    color: white;
 }
 
 
