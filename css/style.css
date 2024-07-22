@@ -10,7 +10,6 @@
 
 body {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
-    font-size: 12px;
 }
 
 img {
@@ -20,6 +19,25 @@ img {
 
 /* Utilities */
 
+.col-20 {
+    flex-basis: 20%;
+}
+
+.col-30 {
+    flex-basis: calc(30% - 10px);
+}
+
+.col-33 {
+    flex-basis: calc(100% / 3 - 20px / 3);
+}
+
+.col-40 {
+    flex-basis: calc(40% - 10px);
+}
+
+.col-80 {
+    flex-basis: 80%;
+}
 
 a {
     text-decoration: none;
@@ -45,7 +63,7 @@ main {
 
 .sidebar {
     flex-basis: 60px;
-    background-color: black;
+    background-color: grey;
     flex-shrink: 0;
 
     padding: 10px 10px;
@@ -106,12 +124,13 @@ main {
 footer {
     height: 120px;
     background-color: #292929;
-    padding: 20px 10px;
+    padding: 20px 5px;
 
-    justify-content: space-between;
 }
 
-.footer.row {
+footer.row {
+    display: flex;
+    justify-content: space-between;
     gap: 10px;
 }
 
@@ -121,44 +140,52 @@ footer>* {
 
 /* Footer left */
 
-.col-30 {
-    flex-basis: calc(30% - 10px);
-}
-
-.col-33 {
-    flex-basis: calc(100% / 3 - 10px);
-}
-
-.col-40 {
-    flex-basis: calc(40% - 10px);
-}
 
 .footer-left {
+    display: flex;
     align-items: center;
     color: grey;
 }
 
-.footer-left>* {
-    margin: 0 10px;
-}
-
 .current-song {
+    display: flex;
     gap: 10px;
     align-items: center;
 }
 
-
-.current-song-opt {
-    display: inline;
+.current-song img {
+    max-width: 70px;
 }
 
-.album-cover img {
-    max-height: 75px;
+
+.current-song-opt * {
+    padding: 0 5px;
 }
+
 
 /* Footer middle */
 
 .footer-mid {}
+
+.player-icons {
+    padding: 10px 0;
+    width: 175px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.player-icons button {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.fa-circle-play {
+    padding: 0 10px;
+}
+
 
 /* Footer right */
 
