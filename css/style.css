@@ -164,6 +164,30 @@ main {
     flex-grow: 1;
 }
 
+.core-top-menu {
+    padding: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.core-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab {
+    flex-basis: calc(100% / 4 - 30px / 4);
+    text-align: center;
+}
+
+.tab a {
+    color: var(--text-grey);
+}
+
 /* Header */
 
 .core-header {
@@ -227,6 +251,10 @@ footer>* {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.current-song h4 {
+    color: white;
 }
 
 .current-song img {

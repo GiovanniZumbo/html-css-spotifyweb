@@ -32,6 +32,11 @@
     footer .col-30 {
         flex-basis: calc(30% - 10px);
     }
+
+    .tab {
+        flex-basis: calc(100% / 5 - 40px / 4);
+        text-align: center;
+    }
 }
 
 
@@ -42,6 +47,11 @@
 
     footer .col-40 {
         flex-basis: calc(40% - 10px);
+    }
+
+    .core-navbar {
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 
 }
