@@ -4,9 +4,6 @@
         width: 250px;
     }
 
-    .core-content {
-        padding-left: 250px;
-    }
 }
 
 @media screen and (min-width: 720px) {}

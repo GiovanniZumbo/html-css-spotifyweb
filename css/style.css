@@ -20,14 +20,6 @@ img {
 
 /* Utilities */
 
-.container {
-    flex-basis: 1200px;
-    margin: 0 auto;
-}
-
-.flex {
-    display: flex;
-}
 
 a {
     text-decoration: none;
@@ -44,7 +36,7 @@ a {
 main {
     background-color: darkcyan;
     height: calc(100vh - 120px);
-    overflow: auto;
+    overflow-y: auto;
 
     display: flex;
 }
@@ -52,12 +44,9 @@ main {
 /*---- Sidebar ----*/
 
 .sidebar {
-    width: 60px;
-    height: calc(100vh - 120px);
+    flex-basis: 60px;
     background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
+    flex-shrink: 0;
 
     padding: 10px 10px;
     text-align: left;
@@ -89,7 +78,6 @@ main {
 .core-content {
     position: relative;
     flex-grow: 1;
-    padding-left: 60px;
 }
 
 /* Header */
@@ -98,8 +86,8 @@ main {
     position: sticky;
     top: 0;
     left: 0;
-    right: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
     height: 90px;
     text-align: right;
     padding: 35px 10px;
