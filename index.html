@@ -29,7 +29,10 @@
         <!-- Second layout -->
         <div class="sidebar">
             <div class="sidebar-top">
-                <div class="sidebar-logo"><img src="img/logo-small.svg" alt=""></div>
+                <div class="sidebar-logo">
+                    <img src="img/logo-small.svg" alt="" id="small-logo">
+                    <img class="hidden" src="img/logo.svg" alt="" id="big-logo">
+                </div>
                 <br>
                 <div class="sidebar-home gray">
                     <div class="home-section"><img src="img/home.svg" alt=""> <span class="hidden"> <a
@@ -62,9 +65,18 @@
 
             </div>
 
-            <div class="sidebar-user"></div>
+            <div class="sidebar-bottom">
+                <div class="download">
+                    <img src="img/download.svg" alt=""> <span class="hidden"><a href="#">Installa app</a></span>
+                </div>
+                <div class="user">
+                    <img src="img/profile.svg" alt="">
+                    <span class="hidden"> <a href="#">John Doe</a></span>
+                </div>
+            </div>
 
         </div>
+
         <div class="core-content">
             <header class="core-header">
                 <a href="#">EFFETTUA L'UPGRADE</a>
@@ -72,6 +84,7 @@
             <div class="core-main">
             </div>
         </div>
+
     </main>
 
     <footer class="row">

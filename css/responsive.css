@@ -1,14 +1,29 @@
 @media screen and (min-width: 576px) {
     .sidebar {
         flex-basis: 250px;
+        padding: 10px 20px;
     }
 
     .hidden {
         display: block;
     }
 
-    .sidebar {
-        padding: 10px 20px;
+    .download {
+        color: var(--text-grey);
+        border-bottom: 1px solid var(--text-grey);
+        padding: 10px 0;
+    }
+
+    .sidebar-bottom {
+        left: 20px;
+    }
+
+    #small-logo {
+        display: none;
+    }
+
+    #big-logo {
+        min-width: 160px;
     }
 
 }

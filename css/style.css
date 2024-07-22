@@ -15,7 +15,8 @@
 
 body {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 13px;
 }
 
 img {
@@ -74,6 +75,8 @@ main {
     flex-shrink: 0;
 
     padding: 10px 10px;
+
+    position: relative;
 }
 
 .sidebar-logo img {
@@ -92,9 +95,11 @@ main {
     padding: 5px 0;
 }
 
-.home-section a {
+.sidebar a {
     color: var(--text-grey);
 }
+
+/* Playlist section */
 
 .playlist {
     margin: 20px 0;
@@ -117,6 +122,40 @@ main {
     margin: 15px 0;
 }
 
+/* Sidebar bottom */
+
+
+.download img {
+    width: 15px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.download,
+.user {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.user a {
+    color: white
+}
+
+.user img {
+    width: 25px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebar-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 80%;
+}
+
 
 /*---- main-content ----*/
 
@@ -136,6 +175,7 @@ main {
     height: 90px;
     text-align: right;
     padding: 35px 10px;
+    font-size: 12px;
 }
 
 .core-header a {
