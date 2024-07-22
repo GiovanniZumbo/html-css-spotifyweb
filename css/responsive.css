@@ -3,6 +3,14 @@
         flex-basis: 250px;
     }
 
+    .hidden {
+        display: block;
+    }
+
+    .sidebar {
+        padding: 10px 20px;
+    }
+
 }
 
 @media screen and (min-width: 850px) {

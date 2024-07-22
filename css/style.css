@@ -1,3 +1,8 @@
+:root {
+    --text-grey: #707070;
+}
+
+
 /* Css reset */
 
 * {
@@ -36,6 +41,14 @@ a {
     text-decoration: none;
 }
 
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /* Colors */
 
 
@@ -56,26 +69,21 @@ main {
 /*---- Sidebar ----*/
 
 .sidebar {
-    flex-basis: 40px;
-    background-color: grey;
+    flex-basis: 50px;
+    background-color: black;
     flex-shrink: 0;
 
     padding: 10px 10px;
-}
-
-
-.sidebar-top {
-    max-width: 100%;
 }
 
 .sidebar-logo img {
     max-width: 40px;
 }
 
+/* Sidebar-home */
 
 .sidebar-home img {
     width: 36px;
-    display: inline-block
 }
 
 .home-section {
@@ -84,9 +92,29 @@ main {
     padding: 5px 0;
 }
 
-.hidden a {
-    /* display: none; */
+.home-section a {
+    color: var(--text-grey);
+}
+
+.playlist {
+    margin: 20px 0;
+    color: var(--text-grey);
+}
+
+.playlist h3 {
     color: white;
+}
+
+.new-playlist i {
+    font-size: 50px;
+    margin: 30px 0;
+    color: lightgray;
+    padding-right: 10px;
+    border-radius: 0px;
+}
+
+.playlist li {
+    margin: 15px 0;
 }
 
 
