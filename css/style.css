@@ -78,7 +78,7 @@ ul {
 
 main {
     background-color: darkcyan;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 100px);
     overflow-y: auto;
 
     display: flex;
@@ -271,7 +271,7 @@ h5 {
 /*-------- FOOTER --------*/
 
 footer {
-    height: 120px;
+    height: 100px;
     background-color: #292929;
     padding: 20px 10px;
     font-size: 12px;
@@ -305,6 +305,7 @@ footer.row {
 
 .current-song h4 {
     color: white;
+    padding-bottom: 5px;
 }
 
 .current-song img {
@@ -312,7 +313,7 @@ footer.row {
 }
 
 .current-song-opt * {
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 /* Footer middle */
@@ -350,7 +351,6 @@ footer.row {
 }
 
 .progress-bar {
-
     background-color: grey;
     flex-basis: 80%;
     margin: 0 10px;
@@ -362,8 +362,23 @@ footer.row {
 
 .advance {
     border: 2px solid white;
-    width: 100px;
+    width: 20%;
     border-radius: 25px;
+
+    position: relative;
+}
+
+.round-btn {
+    width: 15px;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -7px;
+    left: 90%;
+
+    display: none;
 }
 
 /* Footer right */
@@ -381,6 +396,13 @@ footer.row {
 
 .footer-right * {
     color: white;
+}
+
+.volume-bar {
+    background-color: grey;
+    width: 100px;
+    margin: 0 10px;
+    border-radius: 25px;
 }
 
 /* Bonus Active Sidebar*/
@@ -407,5 +429,74 @@ footer.row {
     background-color: var(--lime-green);
     margin: 3px auto;
 
+    display: block;
+}
+
+/* Bonus card Overlay hover */
+
+.card figure {
+    position: relative;
+}
+
+.play-song {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.card:hover .play-song {
+    display: flex;
+}
+
+.play-song i {
+    font-size: 50px;
+}
+
+/* Bonus size hover */
+
+.core-header a:hover {
+    transform: scale(1.2);
+}
+
+.player-icons .fa-circle-play:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Bonus white hover */
+
+.tab:hover a,
+.playlist ul li:hover,
+.new-playlist:hover *,
+.sidebar a:hover,
+.footer-left i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* Bonus underline hover */
+
+.current-song p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Bonus green bar */
+
+.progress-bar:hover .advance,
+.volume-bar:hover .advance {
+    border-color: var(--lime-green);
+    cursor: pointer;
+
+}
+
+.progress-bar:hover .round-btn,
+.volume-bar:hover .round-btn {
     display: block;
 }
