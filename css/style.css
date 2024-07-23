@@ -2,6 +2,8 @@
 
 :root {
     --text-grey: #707070;
+
+    --lime-green: #abff2e;
 }
 
 /* Css reset */
@@ -380,3 +382,20 @@ footer.row {
 .footer-right * {
     color: white;
 }
+
+/* Bonus Active Sidebar*/
+
+.active {
+    position: relative;
+}
+
+.sidebar-top .active::before {
+    content: '';
+    height: 30px;
+    border: 1px solid var(--lime-green);
+    position: absolute;
+    top: 5px;
+    left: -10px;
+}
+
+/*  */
