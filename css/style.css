@@ -1,7 +1,8 @@
+/* Custom */
+
 :root {
     --text-grey: #707070;
 }
-
 
 /* Css reset */
 
@@ -23,16 +24,12 @@ img {
     max-width: 100%;
 }
 
-/* Utilities */
+/*** Utilities ***/
 
 /* Column f-basis */
 
 .col-16 {
     flex-basis: calc(100% / 6);
-}
-
-.col-20 {
-    flex-basis: 20%;
 }
 
 .col-25 {
@@ -55,10 +52,6 @@ img {
     flex-basis: 50%;
 }
 
-.col-80 {
-    flex-basis: 80%;
-}
-
 /*  */
 
 a {
@@ -74,7 +67,6 @@ ul {
 }
 
 /* Colors */
-
 
 .gray {
     color: #4e4e4e;
@@ -151,7 +143,6 @@ main {
 
 /* Sidebar bottom */
 
-
 .download img {
     width: 15px;
     margin-right: 10px;
@@ -182,7 +173,6 @@ main {
     left: 10px;
     width: 80%;
 }
-
 
 /*---- main-content ----*/
 
@@ -217,6 +207,8 @@ main {
     overflow-y: auto;
 }
 
+/* Core Topnav */
+
 .core-top-menu {
     padding: 10px;
     max-width: 700px;
@@ -240,6 +232,8 @@ main {
 .tab a {
     color: var(--text-grey);
 }
+
+/* Core Sections */
 
 section {
     color: white;
@@ -277,10 +271,9 @@ h5 {
 footer {
     height: 120px;
     background-color: #292929;
-    padding: 20px 5px;
+    padding: 20px 10px;
     font-size: 12px;
 }
-
 
 footer button {
     background-color: transparent;
@@ -293,9 +286,7 @@ footer.row {
     gap: 10px;
 }
 
-
 /* Footer left */
-
 
 .footer-left {
     display: flex;
@@ -322,7 +313,6 @@ footer.row {
     padding: 0 5px;
 }
 
-
 /* Footer middle */
 
 .footer-mid {
@@ -344,7 +334,6 @@ footer.row {
     align-items: center;
     justify-content: space-between;
 }
-
 
 .fa-circle-play {
     padding: 0 10px;
