@@ -398,4 +398,14 @@ footer.row {
     left: -10px;
 }
 
-/*  */
+/* Bonus Active Top Navbar*/
+
+.core-navbar .active::after {
+    content: '';
+    width: 25%;
+    height: 2px;
+    background-color: var(--lime-green);
+    margin: 3px auto;
+
+    display: block;
+}
